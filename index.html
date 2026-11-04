@@ -9,15 +9,20 @@
   <meta name="description"
     content="Portfolio profesional de Pablo Ezequiel Schlotthauer - Profesor de Matemática y Estudiante de Lic. en Sistemas de Información (UADER).">
   <meta name="theme-color" content="#161513">
-  
+
   <!-- Open Graph (OG) -->
   <meta property="og:title" content="Pablo Ezequiel Schlotthauer | Portfolio Web">
   <meta property="og:description"
     content="Profesor de Matemática & Estudiante de Lic. en Sistemas de Información (UADER). Desarrollo Web, UX/UI y Frontend.">
-  <meta property="og:image" content="assets/foto-perfil.jfif">
+  <meta property="og:image" content="assets/foto-perfil.png">
   <meta property="og:type" content="website">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Preconnect para CDNs -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <!-- CDN compilada de Tailwind -->
+  <!-- En lugar del <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
   <!-- FontAwesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -53,19 +58,19 @@
     <!-- 2. HERO -->
     <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-28 pb-12">
       <div class="w-48 h-48 rounded-full p-[4px] bg-[#635BFF] mb-8 shadow-2xl">
-        <img src="assets/foto-perfil.jfif" alt="Fotografía de perfil de Pablo Ezequiel Schlotthauer"
-          class="w-full h-full object-cover rounded-full">
+        <img src="assets/foto-perfil.jfif" alt="Foto de Pablo Schlotthauer" loading="eager"
+          class="w-48 h-48 rounded-full border-4 border-indigo-500 object-cover shadow-lg mb-6 mx-auto">
       </div>
-  
+
       <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
         Pablo Ezequiel Schlotthauer
       </h1>
-  
+
       <p class="max-w-xl text-xs md:text-sm text-zinc-400 mb-8 leading-relaxed">
         Profesor de Matemática & Estudiante de Lic. en Sistemas de Información (UADER).<br>
         Enfocado en el desarrollo web claro, funcional y accesible.
       </p>
-  
+
       <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-12">
         <a href="#contacto"
           class="px-8 py-3 bg-white text-black font-bold text-xs rounded-full hover:bg-zinc-200 transition text-center shadow-md">
@@ -137,19 +142,22 @@
       <h2 class="text-2xl font-black text-orange-600 text-center mb-12 tracking-widest uppercase">
         PROYECTOS
       </h2>
-    
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Tarjeta 1: OPENART (Caso de estudio UX/UI) -->
         <article
           class="bg-[#1e1d1b] border border-zinc-800 rounded-xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-zinc-700 transition">
           <div class="h-44 overflow-hidden bg-zinc-950">
-            <img src="assets/openart.png" alt="Caso de estudio OpenArt E-Commerce" class="w-full h-full object-cover">
+            <img src="assets/openart.png" alt="Captura del proyecto Open Art Mobile App" width="600" height="400"
+              loading="lazy" class="w-full h-48 object-cover">
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
-              <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">E-COMMERCE Y CHECKOUT MOBILE DE
+              <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">E-COMMERCE Y CHECKOUT MOBILE
+                DE
                 ARTE DIGITAL</p>
-              <p class="text-xs text-zinc-400 mb-4 leading-relaxed">Investigación de usuarios, prototipado interactivo en
+              <p class="text-xs text-zinc-400 mb-4 leading-relaxed">Investigación de usuarios, prototipado interactivo
+                en
                 Figma y test de usabilidad.</p>
             </div>
             <div class="flex justify-between items-center pt-3 border-t border-zinc-800/40">
@@ -159,12 +167,13 @@
             </div>
           </div>
         </article>
-    
+
         <!-- Tarjeta 2: COFFEA LANDING -->
         <article
           class="bg-[#1e1d1b] border border-zinc-800 rounded-xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-zinc-700 transition">
           <div class="h-44 overflow-hidden bg-zinc-950">
-            <img src="assets/coffea.png" alt="Coffea Landing Page" class="w-full h-full object-cover">
+            <img src="assets/coffea.png" alt="Captura del proyecto Coffea Coffee Shop" width="600" height="400"
+              loading="lazy" class="w-full h-48 object-cover">
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
@@ -180,16 +189,18 @@
             </div>
           </div>
         </article>
-    
+
         <!-- Tarjeta 3: CUBRÍ SEGUROS -->
         <article
           class="bg-[#1e1d1b] border border-zinc-800 rounded-xl overflow-hidden shadow-xl flex flex-col justify-between hover:border-zinc-700 transition">
           <div class="h-44 overflow-hidden bg-zinc-950">
-            <img src="assets/cubri-seguros.png" alt="Cubrí Seguros Web App" class="w-full h-full object-cover">
+            <img src="assets/cubri-seguros.png" alt="Captura del proyecto Cubri Seguros" width="600" height="400"
+              loading="lazy" class="w-full h-48 object-cover">
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
-              <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">WEB APP DE COTIZACIÓN Y CHECKOUT
+              <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">WEB APP DE COTIZACIÓN Y
+                CHECKOUT
                 DIGITAL</p>
               <p class="text-xs text-zinc-400 mb-4 leading-relaxed">Flujo dinámico multipaso maquetado con JavaScript
                 Vanilla y Tailwind CSS.</p>
@@ -209,11 +220,12 @@
       <h2 class="text-2xl font-black text-[#635BFF] text-center mb-12 tracking-widest uppercase">
         EXPERIENCIA
       </h2>
-    
+
       <div class="space-y-8">
         <div class="flex gap-4 items-start">
           <div class="w-8 h-8 rounded-full overflow-hidden shrink-0 mt-1">
-            <img src="assets/logo-uader.jfif" alt="Logo de UADER FCyT" class="w-full h-full object-cover">
+            <img src="assets/logo-uader.jfif" alt="Logo UADER FCyT" loading="lazy"
+              class="w-12 h-12 object-contain rounded-md bg-white p-1">
           </div>
           <div class="flex-1">
             <div class="flex justify-between items-baseline mb-1">
@@ -226,7 +238,7 @@
             </p>
           </div>
         </div>
-    
+
         <div class="flex gap-4 items-start">
           <div class="w-8 h-8 rounded-full overflow-hidden shrink-0 mt-1">
             <img src="assets/logo-uader.jfif" alt="Logo Escuela Técnica Ana Urquiza de Victorica"
@@ -243,7 +255,7 @@
             </p>
           </div>
         </div>
-    
+
         <div class="flex gap-4 items-start">
           <div
             class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-sky-400 font-bold text-xs shrink-0 mt-1">
@@ -252,7 +264,8 @@
           <div class="flex-1">
             <h3 class="text-base font-extrabold text-white mb-1">Formación en Desarrollo Web & Programación</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
-              Capacitación continua en desarrollo web y programación: Argentina Programa, Codo a Codo, Educación IT e Inove
+              Capacitación continua en desarrollo web y programación: Argentina Programa, Codo a Codo, Educación IT e
+              Inove
               Code.
             </p>
           </div>
@@ -270,23 +283,28 @@
         Licenciatura en Sistemas me permite abordar el diseño y desarrollo de software con rigor lógico, empatía con el
         usuario y alta claridad estructural.
       </p>
-    
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-zinc-900/40 p-6 rounded-xl border border-zinc-800">
-          <div class="w-8 h-8 bg-orange-500/10 text-orange-500 rounded-lg flex items-center justify-center font-bold mb-4">1
+          <div
+            class="w-8 h-8 bg-orange-500/10 text-orange-500 rounded-lg flex items-center justify-center font-bold mb-4">
+            1
           </div>
           <h3 class="text-sm font-bold mb-2">Rigor y Estructura</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">Aplicación de principios lógicos para estructurar código
             semántico y componentes limpios.</p>
         </div>
         <div class="bg-zinc-900/40 p-6 rounded-xl border border-zinc-800">
-          <div class="w-8 h-8 bg-sky-500/10 text-sky-400 rounded-lg flex items-center justify-center font-bold mb-4">2</div>
+          <div class="w-8 h-8 bg-sky-500/10 text-sky-400 rounded-lg flex items-center justify-center font-bold mb-4">2
+          </div>
           <h3 class="text-sm font-bold mb-2">Diseño Centrado en el Usuario</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">Prioridad en la accesibilidad, usabilidad y navegación fluida
             para todo tipo de personas.</p>
         </div>
         <div class="bg-zinc-900/40 p-6 rounded-xl border border-zinc-800">
-          <div class="w-8 h-8 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center font-bold mb-4">3
+          <div
+            class="w-8 h-8 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center font-bold mb-4">
+            3
           </div>
           <h3 class="text-sm font-bold mb-2">Aprendizaje Continuo</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">Evolución técnica constante adaptando nuevas herramientas y
@@ -302,13 +320,13 @@
         <p class="text-zinc-400 text-xs mb-6 leading-relaxed">
           ¿Tenés algún proyecto en mente o querés conectar? Podés escribirme directamente a mi correo electrónico.
         </p>
-    
+
         <a href="mailto:pabloschlo@gmail.com"
           class="inline-flex items-center gap-2 text-xs text-zinc-300 hover:text-white transition mb-6 bg-zinc-900 border border-zinc-800 px-6 py-3 rounded-full">
           <i class="fa-regular fa-envelope text-sm"></i>
           pabloschlo@gmail.com
         </a>
-    
+
         <div class="flex justify-center items-center gap-5 text-zinc-400 text-base mb-8">
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"
             title="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -317,19 +335,19 @@
         </div>
       </div>
     </section>
-    </main>
-    
-    <!-- 9. FOOTER -->
-    <footer class="bg-[#121110] border-t border-zinc-800/60 py-8 text-center px-6">
-      <div class="max-w-xl mx-auto">
-        <p class="text-[11px] text-zinc-600 mb-2">
-          Desarrollado con HTML5 y Tailwind CSS para Diseño UX/UI (UADER FCyT 2026).
-        </p>
-        <p class="text-[11px] text-zinc-600">
-          &copy; 2026 Pablo Ezequiel Schlotthauer. Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="bg-[#121110] border-t border-zinc-800/60 py-8 text-center px-6">
+    <div class="max-w-xl mx-auto">
+      <p class="text-[11px] text-zinc-600 mb-2">
+        Desarrollado con HTML5 y Tailwind CSS para Diseño UX/UI (UADER FCyT 2026).
+      </p>
+      <p class="text-[11px] text-zinc-600">
+        &copy; 2026 Pablo Ezequiel Schlotthauer. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 
   </main>
 
