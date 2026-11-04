@@ -36,14 +36,14 @@ Se realizó una prueba con 3 usuarios sobre la versión prototipada y la maqueta
 
 ## 📊 Métricas Lighthouse (Mobile)
 
-- **Performance:** ≥ 70
+- **Performance:** ≥ 80
 - **Accesibilidad:** ≥ 90
 - **Buenas Prácticas:** ≥ 90
 - **SEO:** ≥ 90
 
 ## Optimización de rendimiento
 
-Con Lighthouse, la performance pasó de **35 a 75-80** (Accesibilidad: 95, Buenas prácticas: 100, SEO: 100).
+Con Lighthouse, la performance pasó de **35 a 75-85** (Accesibilidad: 95, Buenas prácticas: 100, SEO: 100).
 
 ### Qué se hizo
 
