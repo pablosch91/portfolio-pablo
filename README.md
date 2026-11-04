@@ -6,8 +6,8 @@ Este repositorio contiene el código fuente y el proceso de diseño del Portfoli
 
 ## 🚀 Enlaces del Proyecto
 
-- **Sitio Web Publicado (Deploy):** [https://tu-usuario.netlify.app](https://tu-usuario.netlify.app) *(o la URL de Vercel/GitHub Pages)*
-- **Prototipo Navegable en Figma:** [https://figma.com/design/...](https://figma.com/design/...)
+- **Sitio Web Publicado (Deploy):** https://github.com/pablosch91/portfolio-pablo
+- **Prototipo Navegable en Figma:** https://www.figma.com/design/ffhtcmwGazt923TqcMoedd/Portfolio-Web---Pablo-Schlotthauer?node-id=0-1&t=n5LzUaSVRUFk4fbt-1
 
 ---
 
